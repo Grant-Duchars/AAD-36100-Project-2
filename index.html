@@ -1,0 +1,188 @@
+<!-- Grant Duchars -->
+<!-- For this project I wanted to look into manipulating elements more with the
+  media queries. The biggest thing I learnt was how to be able to change to order
+  of elements at the different breakpoints by using the css order trait. -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmod TTT Role List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Gmod TTT Role List</h1>
+    <div class="flex" id="innocent">
+      <div>
+        <h3 id="innocent-title">Innocent</h3>
+        <p>
+          You are an innocent. Your goal is to survive. You don't know the roles
+          of other players and the traitors are coming to get you, but don't
+          randomly take out other players because you could be removing
+          teammates. Sus out the other players, find clues to potential
+          suspects, or team up with the detective to survive.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Largest Team</li>
+              <li>Detective assistance</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Unknown teammates</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/innocent.png" id="innocent-img" />
+    </div>
+    <div class="flex">
+      <div>
+        <h3 id="detective-title">Detective</h3>
+        <p>
+          You are the detective. Assist the innocents in taking down the
+          traitors. Utilize different gadgets like the binoculors to identify
+          bodies from afar, the dna scanner to hunt down the killer, or others
+          from your detective shop. Be careful though as all other players know
+          who you are and some of them do not want you carying out your job.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Largest Team</li>
+              <li>Buy Menu</li>
+              <li>DNA Scanner</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Unknown teammates</li>
+              <li>Everyone knows your role</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/detective.png" id="detective-img" />
+    </div>
+    <div class="flex">
+      <div>
+        <h3 id="traitor-title">Traitor</h3>
+        <p>
+          You are a traitor. Your goal is to kill all other teams. You know who
+          your traitor teammates are so try to discretely coordinate with them
+          to take down the innocents. In addition to the normal pickups around
+          the map, you also get access to various traps around the map and a
+          wide array of traitor items in the shop.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Buy Menu</li>
+              <li>Known teammates</li>
+              <li>Can potentially work with swappers</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Small team</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/traitor.png" id="traitor-img" />
+    </div>
+    <div class="flex">
+      <div>
+        <h3 id="swapper-title">Swapper</h3>
+        <p>
+          You are the swapper. Your goal is the have another player kill you.
+          Once they do you will smite them and assume the opposite team they
+          were on. The traitors are the only team who know your true identity.
+          It may be in your best intrest to work with the traitors, even though
+          you may not know who they are, to get an innocent to kill you.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Revive when killed</li>
+              <li>Becomes opposite role than killer</li>
+              <li>Traitors know your role</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Can't deal damage before swap</li>
+              <li>Can't win before swap</li>
+              <li>Solo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/swapper.png" id="swapper-img" />
+    </div>
+    <div class="flex">
+      <div>
+        <h3 id="marker-title">Marker</h3>
+        <p>
+          You are the marker. You goal is to mark 75% of the other players with
+          your paintball gun. If successful you will win the round. Players who
+          are marked by you are unable to damage you.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Alternate win condition</li>
+              <li>Marked targets cannot damage you</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Solo</li>
+              <li>Hard to stay inconspicuous after started marking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/marker.png" id="marker-img" />
+    </div>
+    <div class="flex">
+      <div>
+        <h3 id="infected-title">Infected</h3>
+        <p>
+          You are the infected. You goal if the infect the rest of the players.
+          You are on your own and no other evil roles are lurking around, but
+          when you kill another player, they are revived as a zombie and join
+          your team.
+        </p>
+        <div class="grid">
+          <div class="pros">
+            <h4>Pros</h4>
+            <ul>
+              <li>Raise killed players from the dead</li>
+            </ul>
+          </div>
+          <div class="cons">
+            <h4>Cons</h4>
+            <ul>
+              <li>Initially Solo</li>
+              <li>No other evil roles</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/infected.png" id="infected-img" />
+    </div>
+  </body>
+</html>

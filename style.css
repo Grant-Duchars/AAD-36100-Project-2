@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --background-color: #0082fe;
+  --innocent-color: #00a01c;
+  --detective-color: #1440a3;
+  --traitor-color: #d32723;
+  --swapper-color: #d73e90;
+  --marker-color: #7d5383;
+  --infected-color: #763f54;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Color Styling */
+#innocent-title,
+#innocent-img {
+  background-color: var(--innocent-color);
+}
+
+#detective-title,
+#detective-img {
+  background-color: var(--detective-color);
+}
+
+#traitor-title,
+#traitor-img {
+  background-color: var(--traitor-color);
+}
+
+#swapper-title,
+#swapper-img {
+  background-color: var(--swapper-color);
+}
+
+#marker-title,
+#marker-img {
+  background-color: var(--marker-color);
+}
+
+#infected-title,
+#infected-img {
+  background-color: var(--infected-color);
+}
+
+body {
+  background-color: var(--background-color);
+}
+/* End Color Styling */
+
+/* Font Styling */
+h1,
+h3 {
+  font-style: bold;
+  padding: 0.75vw;
+  color: white;
+}
+/* End Font Styling */
+
+/* Positioning Styling */
+.flex {
+  background-color: honeydew;
+  display: flex;
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h3,
+h4,
+p {
+  margin: 1vw;
+}
+
+img {
+  max-width: 50%;
+}
+/* End Positioning Styling */
+
+/* List Styling */
+ul {
+  list-style: none;
+}
+
+ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 0.75em;
+  margin-left: -1em;
+}
+
+.pros ul li::before {
+  color: var(--innocent-color);
+}
+
+.cons ul li::before {
+  color: var(--traitor-color);
+}
+/* End List Styling */
+
+/* Smartphone */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .flex {
+    display: block;
+    max-width: 95%;
+  }
+
+  h3 {
+    margin: 0vw;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  img {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .flex {
+    max-width: 85%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+  .flex {
+    max-width: 70%;
+  }
+
+  #detective-img,
+  #swapper-img,
+  #infected-img {
+    order: -1;
+  }
+}
