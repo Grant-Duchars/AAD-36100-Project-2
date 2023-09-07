@@ -106,8 +106,11 @@ ul li::before {
 }
 /* End List Styling */
 
+/* These media query breakpoints are ones people generally use online.
+   Everywhere has basically these measurements but these specific
+   numbers are from w3schools. */
 /* Smartphone */
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .flex {
     display: block;
     max-width: 95%;
